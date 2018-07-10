@@ -28,3 +28,17 @@ Below is a functional representation of the above two stories
 
 Bike --> working? --> true/false  
 DockingStation --> release_bike --> Bike --> Person
+
+## From Domain Model to a Feature Test
+
+in Interactive Ruby (irb), setting a variable docking_station = DockingStation results in an error:  
+```
+NameError: uninitialized constant DockingStation
+	from (irb):1
+	from /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
+```
+This is a NameError, in file path /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>', on line 1 of irb.
+This error is raised because 'DockingStation' is undefined.
+We will have to intialize/define at the start of the document.
+
+## From Feature Tests to Unit Tests
