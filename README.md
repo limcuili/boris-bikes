@@ -18,7 +18,8 @@ I'd like to see if a bike is working
 nouns = person, bike  
 verbs = use, see if a bike is working
 
-Below is a functional representation of the above two stories  
+Below is a functional representation of the above two stories
+
 | Nouns | Verbs |
 | :-------: | :-------: |
 | bike | use |
