@@ -26,5 +26,5 @@ Below is a functional representation of the above two stories
 | Bike | working? |
 | DockingStation | release_bike |
 
-Bike --> working? --> true/false
+Bike --> working? --> true/false  
 DockingStation --> release_bike --> Bike --> Person
