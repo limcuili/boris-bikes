@@ -6,18 +6,19 @@ Transport for London, the body responsible for delivery of a new bike system, co
 
 ## From User Stories to a Domain Model
 
-As a person,
-So that I can use a bike,
-I'd like a docking station to release a bike.
-nouns = person, bike, docking station
+As a person,  
+So that I can use a bike,  
+I'd like a docking station to release a bike.  
+nouns = person, bike, docking station  
 verbs = use, release a bike
 
-As a person,
-So that I can use a good bike,
-I'd like to see if a bike is working
-nouns = person, bike
+As a person,  
+So that I can use a good bike,  
+I'd like to see if a bike is working  
+nouns = person, bike  
 verbs = use, see if a bike is working
 
+Below is a functional representation of the above two stories  
 | Nouns | Verbs |
 | :-------: | :-------: |
 | bike | use |
