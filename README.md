@@ -10,9 +10,7 @@ Transport for London, the body responsible for delivery of a new bike system, co
 As a person,  
 So that I can use a bike,  
 I'd like a docking station to release a bike.
-```
 
-```
 As a person,  
 So that I can use a good bike,  
 I'd like to see if a bike is working
@@ -24,6 +22,9 @@ Below is a functional representation of the above two stories
 
 | Object | Messages |
 | :-------: | :-------: |
-| person |
-| bike | working? |
-| docking_station | release_bike |
+| Person |
+| Bike | working? |
+| DockingStation | release_bike |
+
+Bike --> working? --> true/false
+DockingStation --> release_bike --> Bike --> Person
