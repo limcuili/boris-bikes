@@ -56,3 +56,4 @@ NameError:
 # ./docking_station_spec.rb:1:in `<top (required)>'
 ```
 We believe this is because I have not coded the RSpec such that we expect certain outputs from certain inputs.
+Further, this is a Ruby error message, not an RSpec message as before. This is because it's reading the spec file for the DockingStation object is being read as a ruby file.
