@@ -38,7 +38,7 @@ NameError: uninitialized constant DockingStation
 	from /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
 ```
 
-This is a NameError, in file path /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in<main>, on line 1 of irb.
+This is a NameError, in file path /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in'main', on line 1 of irb.
 This error is raised because 'DockingStation' is undefined.
 We will have to intialize/define at the start of the document.
 
@@ -55,4 +55,4 @@ NameError:
   uninitialized constant DockingStation
 # ./docking_station_spec.rb:1:in `<top (required)>'
 ```
-I believe this is because I have not coded the RSpec such that we expect certain outputs from certain inputs.
+We believe this is because I have not coded the RSpec such that we expect certain outputs from certain inputs.
