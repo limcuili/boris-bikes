@@ -37,8 +37,22 @@ NameError: uninitialized constant DockingStation
 	from (irb):1
 	from /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>'
 ```
-This is a NameError, in file path /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in `<main>', on line 1 of irb.
+
+This is a NameError, in file path /Users/LimCuiLi/.rvm/rubies/ruby-2.4.1/bin/irb:11:in'main', on line 1 of irb.
 This error is raised because 'DockingStation' is undefined.
 We will have to intialize/define at the start of the document.
 
 ## From Feature Tests to Unit Tests
+
+I initiatialized RSpec within the project and created a spec file for the DockingStation object. I then got the following error:
+```
+Failure/Error:
+  describe DockingStation do
+  
+  end
+
+NameError:
+  uninitialized constant DockingStation
+# ./docking_station_spec.rb:1:in `<top (required)>'
+```
+We believe this is because I have not coded the RSpec such that we expect certain outputs from certain inputs.
