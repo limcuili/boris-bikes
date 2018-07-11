@@ -44,7 +44,7 @@ We will have to intialize/define at the start of the document.
 
 ## From Feature Tests to Unit Tests
 
-I initiatialized RSpec within the project and created a spec file for the DockingStation object. I then got the following error:
+I initiatialized RSpec within the project and created a spec file for the DockingStation object. I then got the following error as a **unit test**:
 ```
 Failure/Error:
   describe DockingStation do
@@ -56,3 +56,9 @@ NameError:
 # ./docking_station_spec.rb:1:in `<top (required)>'
 ```
 We believe this is because I have not coded the RSpec such that we expect certain outputs from certain inputs.
+Further, this is a Ruby error message, not an RSpec message as before. This is because it's reading the spec file for the DockingStation object is being read as a ruby file.
+
+I have now moved back to the **Feature Test** and added ./lib/docking_station.rb that defines a class on the object DockingStation. I then "connected" the rspec to the new object file by typing in "require 'docking_station'" into DockingStation's spec file.
+I had to go on irb and type in "require './lib/docking_station'", and now we do not have the NameError as before when letting "docking_station = DockingStation.new".
+However, a NoMethodError resulted in "bike = station.release_bike". I believe this is because we have not defined a class for the object station, and we have not defined a release_bike method within that class.
+
